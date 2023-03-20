@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+/*======================================================
+              Common part css start
+==========================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/*======================================================
+              Common part css End
+==========================================================*/
+/* ========================================
+      Main body part css start
+===========================================*/
+.virtual-body {
+  margin-top: 2rem;
+}
+.virtual-body .left {
+  position: relative;
+}
+.virtual-body .left .img-container img {
+  width: 200px;
+  max-width: 200px;
+  border-radius: 5px;
+}
+.virtual-body .left .img-below-information .issue-cover {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(0, 111, 183);
+  font-family: "Source Sans Pro", sans-serif;
+  transition: all linear 0.2s;
+  margin-top: 10px;
+}
+.virtual-body .left .img-below-information .issue-cover:hover {
+  text-decoration: underline;
+}
+.virtual-body .left .img-below-date {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .left .article-content {
+  margin-top: 2rem;
+}
+.virtual-body .left .article-content ul .heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .left .article-content li {
+  padding: 0.3rem 0;
+}
+.virtual-body .left .article-content li a {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .left .article-content li a:hover {
+  text-decoration: underline;
+}
+.virtual-body .left .article-content li:nth-child(4) a {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .left .article-content li:last-child {
+  margin-top: 2rem;
+}
+.virtual-body .left .article-content li:last-child a {
+  color: rgb(0, 111, 183);
+}
+.virtual-body .left::after {
+  position: absolute;
+  content: "";
+  top: 0%;
+  right: 0%;
+  width: 1px;
+  height: 100vh;
+  background-color: #cfd5e4;
+}
+.virtual-body .right {
+  margin-left: 3rem;
+}
+.virtual-body .right .top .tag {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 5px 10px;
+  background: #cfd5e4;
+  display: inline-block;
+}
+.virtual-body .right .top .head {
+  position: relative;
+}
+.virtual-body .right .top .head .title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .top .head .title .free {
+  position: absolute;
+  bottom: 8px;
+  left: 87px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  background: green;
+  border-radius: 15px;
+  padding: 2px 8px;
+}
+.virtual-body .right .top .link a {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(0, 111, 183);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .top .link a .fa-envelope {
+  color: rgb(42, 42, 42);
+  padding: 0 3px;
+}
+.virtual-body .right .top .link a:hover {
+  text-decoration: underline;
+}
+.virtual-body .right .top .link .details-link {
+  margin-top: 1rem;
+  line-height: 28px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+}
+.virtual-body .right .top .history {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.virtual-body .right .top .history .history-tile {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .top .history .history-tile span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .top .history .bootcustom-nav .custom-btn {
+  margin-left: 1rem;
+}
+.virtual-body .right .top .history .bootcustom-nav .custom-btn:focus {
+  outline: none !important;
+}
+.virtual-body .right .top .history .bootcustom-nav .custom-btn:active {
+  outline: none !important;
+}
+.virtual-body .right .top .history .bootcustom-nav .custom-ul {
+  padding: 0% 50%;
+  background: #eff2f7;
+  text-align: left !important;
+}
+.virtual-body .right .top .history .bootcustom-nav .custom-ul .custom-li {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 0;
+}
+.virtual-body .right .top .history .bootcustom-nav .custom-ul .custom-li .customlititle {
+  padding: 10px 0;
+}
+
+/* ========================================
+      Main body part css start
+===========================================*//*# sourceMappingURL=style.css.map */

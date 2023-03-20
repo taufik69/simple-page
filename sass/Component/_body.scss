@@ -1,0 +1,155 @@
+@import "../Variable/variable";
+@import "../Mixins/mixin";
+/* ========================================
+      Main body part css start
+===========================================*/
+.virtual-body {
+  margin-top: 2rem;
+  .left {
+    position: relative;
+
+    .img-container {
+      img {
+        width: 200px;
+        max-width: 200px;
+        border-radius: 5px;
+      }
+    }
+    .img-below-information {
+      .issue-cover {
+        @include fontinfo(17px, 400, rgb(0, 111, 183), $source-sans);
+        transition: all linear 0.2s;
+        margin-top: 10px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .img-below-date {
+      @include fontinfo(17px, 400, rgb(42, 42, 42), $source-sans);
+    }
+    .article-content {
+      margin-top: 2rem;
+      ul {
+        .heading {
+          @include fontinfo(20px, 700, rgb(42, 42, 42), $source-sans);
+        }
+      }
+      li {
+        padding: 0.3rem 0;
+        a {
+          @include fontinfo(15px, 400, rgb(42, 42, 42), $source-sans);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        &:nth-child(4) {
+          a {
+            @include fontinfo(15px, 700, rgb(42, 42, 42), $source-sans);
+          }
+        }
+        &:last-child {
+          margin-top: 2rem;
+          a {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0%;
+      right: 0%;
+      width: 1px;
+      height: 100vh;
+      background-color: #cfd5e4;
+    }
+  }
+  // -----> right side css .
+  .right {
+    margin-left: 3rem;
+    .top {
+      .tag {
+        @include fontinfo(13px, 400, $primary-color, $source-sans);
+        padding: 5px 10px;
+        background: #cfd5e4;
+        display: inline-block;
+      }
+      .head {
+        position: relative;
+        .title {
+          position: relative;
+          @include fontinfo(24px, 700, $primary-color, $source-sans);
+          .free {
+            position: absolute;
+            bottom: 8px;
+            left: 87px;
+            @include fontinfo(10px, 300, #fff, $source-sans);
+
+            background: green;
+            border-radius: 15px;
+            padding: 2px 8px;
+          }
+        }
+      }
+      .link {
+        a {
+          @include fontinfo(17px, 400, $secondary-color, $source-sans);
+          .fa-envelope {
+            color: $primary-color;
+            padding: 0 3px;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .details-link {
+          margin-top: 1rem;
+          line-height: 28px;
+          @include fontinfo(17px, 400, $primary-color, $source-sans);
+          font-style: italic;
+        }
+      }
+      .history {
+        display: flex;
+        align-items: center;
+
+        margin-top: 0.6rem;
+        .history-tile {
+          @include fontinfo(17px, 700, $primary-color, $source-sans);
+          span {
+            @include fontinfo(16px, 400, $primary-color, $source-sans);
+          }
+        }
+        .bootcustom-nav {
+          .custom-btn {
+            margin-left: 1rem;
+            &:focus {
+              outline: none !important;
+            }
+            &:active {
+              outline: none !important;
+            }
+          }
+          .custom-ul {
+            padding: 0% 50%;
+            background: #eff2f7;
+            text-align: left !important;
+            .custom-li {
+              width: max-content;
+              padding: 10px 0;
+              .customlititle {
+                padding: 10px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========================================
+      Main body part css start
+===========================================*/

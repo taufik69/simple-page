@@ -69,9 +69,11 @@
   // -----> right side css .
   .right {
     margin-left: 3rem;
+
     .top {
       .tag {
         @include fontinfo(13px, 400, $primary-color, $source-sans);
+        margin-bottom: 0.5rem;
         padding: 5px 10px;
         background: #cfd5e4;
         display: inline-block;
@@ -111,40 +113,52 @@
           font-style: italic;
         }
       }
-      .history {
-        display: flex;
-        align-items: center;
+    }
+    .history {
+      display: flex;
+      margin-top: 0.6rem;
 
-        margin-top: 0.6rem;
-        .history-tile {
-          @include fontinfo(17px, 700, $primary-color, $source-sans);
-          span {
-            @include fontinfo(16px, 400, $primary-color, $source-sans);
-          }
+      .history-tile {
+        margin-top: 9px;
+        @include fontinfo(17px, 700, $primary-color, $source-sans);
+        span {
+          @include fontinfo(16px, 400, $primary-color, $source-sans);
         }
-        .bootcustom-nav {
-          .custom-btn {
-            margin-left: 1rem;
-            &:focus {
-              outline: none !important;
-            }
-            &:active {
-              outline: none !important;
-            }
-          }
-          .custom-ul {
-            padding: 0% 50%;
-            background: #eff2f7;
-            text-align: left !important;
-            .custom-li {
-              width: max-content;
-              padding: 10px 0;
-              .customlititle {
-                padding: 10px 0;
-              }
-            }
-          }
+      }
+      .dropdown {
+        .custom-btn {
+          border: none !important;
+          margin-left: 0.4rem;
         }
+      }
+    }
+
+    .icon-list {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .icon-descriotion {
+        display: flex;
+        margin-right: 2.4rem;
+        align-items: center;
+        span {
+          @include fontinfo(17px, 600, #000000, $source-sans);
+          margin-left: 10px;
+        }
+        .fa-file-pdf {
+          color: red;
+          font-size: 25px;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #000;
       }
     }
   }

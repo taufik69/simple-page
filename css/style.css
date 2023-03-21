@@ -122,6 +122,7 @@ li {
   font-weight: 400;
   color: rgb(42, 42, 42);
   font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0.5rem;
   padding: 5px 10px;
   background: #cfd5e4;
   display: inline-block;
@@ -170,44 +171,57 @@ li {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
 }
-.virtual-body .right .top .history {
+.virtual-body .right .history {
   display: flex;
-  align-items: center;
   margin-top: 0.6rem;
 }
-.virtual-body .right .top .history .history-tile {
+.virtual-body .right .history .history-tile {
+  margin-top: 9px;
   font-size: 17px;
   font-weight: 700;
   color: rgb(42, 42, 42);
   font-family: "Source Sans Pro", sans-serif;
 }
-.virtual-body .right .top .history .history-tile span {
+.virtual-body .right .history .history-tile span {
   font-size: 16px;
   font-weight: 400;
   color: rgb(42, 42, 42);
   font-family: "Source Sans Pro", sans-serif;
 }
-.virtual-body .right .top .history .bootcustom-nav .custom-btn {
-  margin-left: 1rem;
+.virtual-body .right .history .dropdown .custom-btn {
+  border: none !important;
+  margin-left: 0.4rem;
 }
-.virtual-body .right .top .history .bootcustom-nav .custom-btn:focus {
-  outline: none !important;
+.virtual-body .right .icon-list {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.virtual-body .right .top .history .bootcustom-nav .custom-btn:active {
-  outline: none !important;
+.virtual-body .right .icon-list .icon-descriotion {
+  display: flex;
+  margin-right: 2.4rem;
+  align-items: center;
 }
-.virtual-body .right .top .history .bootcustom-nav .custom-ul {
-  padding: 0% 50%;
-  background: #eff2f7;
-  text-align: left !important;
+.virtual-body .right .icon-list .icon-descriotion span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-left: 10px;
 }
-.virtual-body .right .top .history .bootcustom-nav .custom-ul .custom-li {
-  width: -moz-max-content;
-  width: max-content;
-  padding: 10px 0;
+.virtual-body .right .icon-list .icon-descriotion .fa-file-pdf {
+  color: red;
+  font-size: 25px;
 }
-.virtual-body .right .top .history .bootcustom-nav .custom-ul .custom-li .customlititle {
-  padding: 10px 0;
+.virtual-body .right .icon-list::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
 }
 
 /* ========================================

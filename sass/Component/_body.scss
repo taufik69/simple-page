@@ -7,7 +7,8 @@
   margin-top: 2rem;
   .left {
     position: relative;
-
+    position: sticky;
+    top: 30px;
     .img-container {
       img {
         width: 200px;
@@ -130,11 +131,15 @@
           border: none !important;
           margin-left: 0.4rem;
         }
+        .custom-card-body {
+          background: #eff2f7 !important;
+          margin-bottom: 6rem !important;
+        }
       }
     }
 
     .icon-list {
-      margin-top: 1rem;
+      margin-top: -5.5rem;
       display: flex;
       align-items: center;
       position: relative;
@@ -142,7 +147,7 @@
         display: flex;
         margin-right: 2.4rem;
         align-items: center;
-        span {
+        Merriweather span {
           @include fontinfo(17px, 600, #000000, $source-sans);
           margin-left: 10px;
         }
@@ -154,11 +159,127 @@
       &::after {
         position: absolute;
         content: "";
-        bottom: 0;
+        bottom: -13px;
         left: 0;
-        width: 100%;
-        height: 2px;
-        background: #000;
+        width: 92%;
+        height: 1px;
+        background: #cfd5e4;
+      }
+    }
+    .another {
+      background: #cfd5e4;
+      padding: 0.7rem 0;
+      width: 92%;
+      margin-top: 2rem;
+      .another-title {
+        @include fontinfo(17px, 700, $primary-color, $source-sans);
+        padding: 0.5rem 1rem;
+        span {
+          @include fontinfo(17px, 400, $secondary-color, $source-sans);
+          margin-left: 10px;
+          text-decoration: underline;
+        }
+      }
+    }
+    .random-text {
+      margin-top: 3rem;
+      .random-para {
+        @include fontinfo(15px, 500, $primary-color, $Merriweather);
+        line-height: 25.5px;
+        margin-right: 46px;
+        text-align: justify;
+      }
+    }
+    .image-part {
+      margin-top: 2rem;
+      .img-part-title {
+        @include fontinfo(17px, 700, $primary-color, $source-sans);
+      }
+      img {
+        margin-top: 0.7rem;
+        width: 93%;
+        max-width: 93%;
+      }
+      .button-group {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        .custom-group-btn {
+          padding: 9px 16px;
+          background: #267cb5;
+          margin-left: 1rem;
+          @include fontinfo(17px, 400, #fff, $source-sans);
+          &:hover {
+            background: #1b78b6be;
+          }
+        }
+      }
+      .one-line-txt {
+        @include fontinfo(15px, 400, $primary-color, $source-sans);
+        margin: 1rem 0;
+      }
+    }
+    .text-book {
+      padding: 1rem 0;
+      @include fontinfo(15px, 400, $primary-color, $Merriweather);
+      margin-right: 46px;
+      line-height: 25.5px;
+      text-align: justify;
+      .long-text {
+        padding: 0.8rem 0;
+      }
+    }
+    .funding {
+      padding: 2rem 0;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 75px;
+        left: 0;
+        width: 93%;
+        height: 1px;
+        background: #cfd5e4;
+      }
+      h2 {
+        @include fontinfo(27px, 700, $primary-color, $source-sans);
+      }
+      p {
+        @include fontinfo(15px, 400, $primary-color, $Merriweather);
+        padding-top: 2rem;
+      }
+      ol {
+        padding-top: 2.5rem;
+        @include fontinfo(15px, 400, $primary-color, $source-sans);
+        line-height: 22.5px;
+        li {
+          list-style: decimal;
+          padding: 1rem 0;
+          span {
+            a {
+              text-decoration: underline;
+            }
+          }
+          .anchor-list {
+            margin-top: 0.5rem;
+            a {
+              padding-right: 2.5rem;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          &:nth-child(12) {
+            list-style: none;
+            margin-left: -1.3rem;
+          }
+          &:last-child {
+            list-style: none;
+            margin-left: -1.3rem;
+          }
+        }
       }
     }
   }

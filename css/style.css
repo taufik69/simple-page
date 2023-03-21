@@ -10,8 +10,7 @@
   box-sizing: border-box;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
 }
 
@@ -49,6 +48,8 @@ li {
 }
 .virtual-body .left {
   position: relative;
+  position: sticky;
+  top: 30px;
 }
 .virtual-body .left .img-container img {
   width: 200px;
@@ -192,8 +193,12 @@ li {
   border: none !important;
   margin-left: 0.4rem;
 }
+.virtual-body .right .history .dropdown .custom-card-body {
+  background: #eff2f7 !important;
+  margin-bottom: 6rem !important;
+}
 .virtual-body .right .icon-list {
-  margin-top: 1rem;
+  margin-top: -5.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -203,7 +208,7 @@ li {
   margin-right: 2.4rem;
   align-items: center;
 }
-.virtual-body .right .icon-list .icon-descriotion span {
+.virtual-body .right .icon-list .icon-descriotion Merriweather span {
   font-size: 17px;
   font-weight: 600;
   color: #000000;
@@ -217,11 +222,155 @@ li {
 .virtual-body .right .icon-list::after {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: -13px;
   left: 0;
-  width: 100%;
-  height: 2px;
-  background: #000;
+  width: 92%;
+  height: 1px;
+  background: #cfd5e4;
+}
+.virtual-body .right .another {
+  background: #cfd5e4;
+  padding: 0.7rem 0;
+  width: 92%;
+  margin-top: 2rem;
+}
+.virtual-body .right .another .another-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0.5rem 1rem;
+}
+.virtual-body .right .another .another-title span {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(0, 111, 183);
+  font-family: "Source Sans Pro", sans-serif;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+.virtual-body .right .random-text {
+  margin-top: 3rem;
+}
+.virtual-body .right .random-text .random-para {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(42, 42, 42);
+  font-family: "Merriweather Sans", sans-serif;
+  line-height: 25.5px;
+  margin-right: 46px;
+  text-align: justify;
+}
+.virtual-body .right .image-part {
+  margin-top: 2rem;
+}
+.virtual-body .right .image-part .img-part-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .image-part img {
+  margin-top: 0.7rem;
+  width: 93%;
+  max-width: 93%;
+}
+.virtual-body .right .image-part .button-group {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.virtual-body .right .image-part .button-group .custom-group-btn {
+  padding: 9px 16px;
+  background: #267cb5;
+  margin-left: 1rem;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .image-part .button-group .custom-group-btn:hover {
+  background: rgba(27, 120, 182, 0.7450980392);
+}
+.virtual-body .right .image-part .one-line-txt {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1rem 0;
+}
+.virtual-body .right .text-book {
+  padding: 1rem 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Merriweather Sans", sans-serif;
+  margin-right: 46px;
+  line-height: 25.5px;
+  text-align: justify;
+}
+.virtual-body .right .text-book .long-text {
+  padding: 0.8rem 0;
+}
+.virtual-body .right .funding {
+  padding: 2rem 0;
+  position: relative;
+}
+.virtual-body .right .funding::after {
+  position: absolute;
+  content: "";
+  top: 75px;
+  left: 0;
+  width: 93%;
+  height: 1px;
+  background: #cfd5e4;
+}
+.virtual-body .right .funding h2 {
+  font-size: 27px;
+  font-weight: 700;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.virtual-body .right .funding p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Merriweather Sans", sans-serif;
+  padding-top: 2rem;
+}
+.virtual-body .right .funding ol {
+  padding-top: 2.5rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 22.5px;
+}
+.virtual-body .right .funding ol li {
+  list-style: decimal;
+  padding: 1rem 0;
+}
+.virtual-body .right .funding ol li span a {
+  text-decoration: underline;
+}
+.virtual-body .right .funding ol li .anchor-list {
+  margin-top: 0.5rem;
+}
+.virtual-body .right .funding ol li .anchor-list a {
+  padding-right: 2.5rem;
+}
+.virtual-body .right .funding ol li .anchor-list a:hover {
+  text-decoration: underline;
+}
+.virtual-body .right .funding ol li:nth-child(12) {
+  list-style: none;
+  margin-left: -1.3rem;
+}
+.virtual-body .right .funding ol li:last-child {
+  list-style: none;
+  margin-left: -1.3rem;
 }
 
 /* ========================================
